@@ -1,0 +1,388 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#frontPage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("./img/header.jpg");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    opacity: 0.7;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#navName {
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    color: rgb(186, 213, 52);
+}
+
+#navName:hover {
+    color: white;
+    transition: color 0.5s;
+}
+
+#bigL {
+    font-size: 2rem;
+}
+
+.navbar .nav-item .nav-link {
+    transition: color 0.5s;
+    padding: 7px 2rem;
+    color: rgb(186, 213, 52);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+    box-shadow: 0 0 8px #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.banner {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    /* opacity: 0; */
+}
+
+#bigL1 {
+    font-weight: 400;
+    font-size: 6rem;
+}
+
+.banner h1 {
+    color: rgb(0.0.0);
+    font-weight: 350;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#bigL2 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.banner p {
+    color: rgb(0.0.0);
+    font-weight: 350;
+    font-size: 2rem;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#banner-title {
+    position: relative;
+    opacity: 0;
+    animation: myanimateT 2s;
+    animation-fill-mode: forwards;
+}
+
+#banner-text {
+    position: relative;
+    opacity: 0;
+    animation: myanimateM 2s 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myanimateT {
+    from {
+        right: -20%;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes myanimateM {
+    from {
+        left: -20%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+#onama {
+    background-color: #151f20;
+}
+
+#underline {
+    width: 100px;
+    height: 5px;
+    background-color: white;
+    margin: auto;
+}
+
+#oNama1 {
+    color: rgb(186, 213, 52);
+}
+
+#fromLeft1 {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    left: 50px;
+    top: 0;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+}
+
+#fromLeft2 {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    left: 250px;
+    top: -20;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+}
+
+#fromLeft3 {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    left: 50px;
+    top: -40;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+}
+
+.fromLeft1 {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    left: 50px;
+    top: 0;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    opacity: 0;
+    animation: fromLeft1 2s;
+    animation-fill-mode: forwards;
+}
+
+.fromLeft2 {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    left: 250px;
+    top: -20px;
+    z-index: 1;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    opacity: 0;
+    animation: fromLeft2 2s 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.fromLeft3 {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    left: 50px;
+    top: -40px;
+    z-index: 2;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    opacity: 0;
+    animation: fromLeft3 2s 1s;
+    animation-fill-mode: forwards;
+}
+
+#fromRight {
+    position: relative;
+    right: 0px;
+}
+
+.fromRight {
+    position: relative;
+    right: 0px;
+    opacity: 0;
+    animation: fromRight 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromRight {
+    from {
+        right: 0px;
+        opacity: 0;
+    }
+    to {
+        right: 20px;
+        opacity: 1;
+    }
+}
+
+@keyframes fromLeft1 {
+    from {
+        left: 0px;
+        opacity: 0;
+    }
+    to {
+        left: 50px;
+        opacity: 1;
+    }
+}
+
+@keyframes fromLeft2 {
+    from {
+        left: 200px;
+        opacity: 0;
+    }
+    to {
+        left: 250px;
+        opacity: 1;
+    }
+}
+
+@keyframes fromLeft3 {
+    from {
+        left: 0px;
+        opacity: 0;
+    }
+    to {
+        left: 50px;
+        opacity: 1;
+    }
+}
+
+.card-shadow {
+    box-shadow: 5px 8px 20px rgb(26, 26, 26);
+}
+
+.card .card-body {
+    background-color: #151f20;
+}
+
+.card-img {
+    border-radius: 0;
+}
+
+#reference {
+    background-color: #151f20;
+    padding-top: 100px !important;
+}
+
+#underline1 {
+    width: 150px;
+    height: 3px;
+    background-color: white;
+    margin: auto;
+}
+
+#imgMap {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(186, 213, 52);
+    border-radius: 3px;
+    box-shadow: 5px 8px 20px rgb(26, 26, 26);
+}
+
+#networks {
+    width: 50px;
+    height: 50px;
+    margin-top: 2rem;
+    margin-left: calc(50% - 25px);
+    margin-right: calc(50% - 25px);
+    border: 1px solid rgb(186, 213, 52);
+    border-radius: 2px;
+    color: rgb(186, 213, 52);
+    box-shadow: 5px 8px 20px rgb(26, 26, 26);
+}
+
+#networks:hover {
+    background-color: rgb(186, 213, 52);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#contactD {
+    text-shadow: 5px 8px 20px rgb(26, 26, 26);
+}
+
+.list-unstyled {
+    margin-top: 2rem;
+}
+
+.list-unstyled li {
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: rgb(186, 213, 52);
+    text-shadow: 5px 8px 20px rgb(26, 26, 26);
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#gallery {
+    padding-top: 100px !important;
+}
+
+.gallery-list-item {
+    color: #777;
+    cursor: pointer;
+}
+
+.active-item {
+    color: rgb(186, 213, 52);
+}
+
+.formBg {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    left: 25%;
+    top: 17.5%;
+    border: 1px solid rgb(186, 213, 52);
+    border-radius: 10px;
+    box-shadow: 5px 8px 20px rgb(26, 26, 26);
+}
+
+.btnContact {
+    background-color: rgb(186, 213, 52);
+    box-shadow: 5px 8px 20px rgb(26, 26, 26);
+}
+
+.form-control {
+    border-color: #28a745;
+    background-color: rgb(186, 213, 52);
+    box-shadow: 5px 8px 20px rgb(26, 26, 26);
+}
